@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>User Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      font-family: "Nunito", sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+    }
+    
+    .container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      background-color: var(--black);
+      padding: 0.5rem;
+    }
+    
+    .sidebar {
+      width: 25%;
+      background-color: var(--grey);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .nav-link {
+      color: var(--white);
+      text-decoration: none;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      color: var(--light-grey);
+    }
+    
+    .main-content {
+      width: 75%;
+      padding: 1.5rem;
+    }
+    
+    .card {
+      background-color: var(--light-grey);
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .card h2 {
+      margin-bottom: 1rem;
+    }
+    
+    .playlist {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .playlist img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+    
+    .playlist p {
+      font-weight: 600;
+    }
+    
+    .button {
+      padding: 0.5rem 1rem;
+      background-color: var(--black);
+      color: var(--white);
+      border: none;
+      border-radius: 0.3rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: var(--grey);
+      color: var(--white);
+    }
+    
+    .footer {
+      background-color: var(--black);
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1>Welcome, User!</h1>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="profile.html">Profile</a>
+      <a class="nav-link" href="#">Playlists</a>
+      <a class="nav-link" href="#">Favorites</a>
+      <a class="nav-link" href="#">Settings</a>
+      <a class="nav-link" href="#">Logout</a>
+    </div>
+    <div class="main-content">
+      <h2>Your Music Playlists</h2>
+      <div class="card">
+        <h3>Featured Playlist</h3>
+        <div class="link-flex album-flex">
+            <img src="./assets/assets1/billie-holiday-lady-in-satin-cover-1958-billboard-1240.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">Alone</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div>
+          <div class="link-flex album-flex">
+            <img src="./assets/assets1/RM-Indigo-album-art-billboard-1240.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">Indigo</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div>
+          <div class="link-flex album-flex">
+            <img src="./assets/assets1/carole-king-tapestry-1971-billboard-1240.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">Blue</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div>
+          <div class="link-flex album-flex">
+            <img src="./assets/assets1/roberta-flack-first-take-cover-1969-billboard-1240.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">First take</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div>
+      <div class="card">
+        <h3>Your Personal Playlists</h3>
+        <div class="link-flex album-flex">
+            <img src="./assets/assets1/chance-the-rapper-acid-rap-billboard-1240-1.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">Acid</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div>
+          <div class="link-flex album-flex">
+            <img src="./assets/assets1/billie-holiday-lady-in-satin-cover-1958-billboard-1240.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">Holiday</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div>
+          <div class="link-flex album-flex">
+            <img src="./assets/assets1/Young-Thug-Jeffery-2016-billboard-1240.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">2016</p>
+              <p>Playlist &#x2022; Beatsocialy</p>
+            </div>
+          </div>
+          <div class="link-flex album-flex">
+            <img src="./assets/assets1/anti.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">Anti</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div> 
+          <div class="link-flex album-flex">
+            <img src="./assets/assets1/ yoko-ono-season-of-glass-cover-1981-billboard-800.jpg.jpg" class="album-cover" />
+            <div class="col-flex">
+              <p class="album-name">Season</p>
+              <p>Playlist &#x2022; Beatsocial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    &copy; 2023 Beatsocial. All rights reserved.
+  </div>
+</body>
+</html>
